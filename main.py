@@ -1,7 +1,11 @@
 print()
 
-cost = float(input("Enter cost: "))
-percent = float(input("Enter tip percent: "))
-tip = cost * percent / 100
+cost = float(input("Enter the cost: $"))
+percent = float(input("Enter the tip percent: "))
 
-print(f"\nThe tip is {tip}, the total cost is {cost + tip}.")
+decimal = percent / 100
+tip = cost * decimal
+total_cost = cost + tip
+
+print(f"\nTip: ${tip:.2f}")
+print(f"Total cost: ${total_cost:.2f}")
